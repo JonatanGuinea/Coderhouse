@@ -1,0 +1,8 @@
+@import './bases/variables';
+@import './bases/estilosGlobales';
+@import './utilities/extends';
+@import './utilities/mixins';
+
+@import './components/header';
+@import './components/main';
+@import './components/footer';

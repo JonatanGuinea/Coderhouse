@@ -1,0 +1,77 @@
+// diseño del footer
+
+//MOBILE
+
+@media only screen and (max-width: 490px){
+footer {
+    width: 100%;
+    color: $colorPrincipal;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+
+    &.footer-index {
+        position: relative;
+        margin-top: 50px;
+    }
+
+    & .footer-redes {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    & .footer-text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-size: 10px;
+        align-items: center;
+        padding: 10px 0;
+        row-gap: 5px;
+        column-gap: 10px;
+    }
+
+    & img {
+        height: 50px;
+    }
+}
+
+}
+
+//TABLET
+
+
+/* diseño del footer */
+@media only screen and (min-width: 490px) {
+footer {
+    width: 100%;
+    color: $colorPrincipal;
+    background-color: rgb(0, 0, 0);
+    &.footer-index {
+        position: relative;
+    }
+    
+    & .footer-redes {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    
+    & .footer-text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+
+    & img {
+        height: 70px;
+    }
+
+    /* fin diseño del footer */
+}
+
+
+}

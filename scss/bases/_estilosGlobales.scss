@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../fuentes/ubuntu/Ubuntu-Regular.ttf');
+}
+
+* {
+    font-family: 'ubuntu';
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: $colorPrincipal;
+}
+
+
+body {
+    @extend %estiloColumn;
+    
+}

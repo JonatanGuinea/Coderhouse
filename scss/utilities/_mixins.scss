@@ -1,0 +1,21 @@
+@mixin card($color:#3e7c94){
+    background-color: $color;
+    max-width: 200px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0 0 0;
+        max-height: 300px;
+}
+
+@mixin container{
+    width: 80%;
+        max-width: 500px;
+        margin: 200px auto 0;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-size: 25px;
+}

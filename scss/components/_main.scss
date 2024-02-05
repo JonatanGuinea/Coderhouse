@@ -1,0 +1,391 @@
+//MOBILE
+@media only screen and (max-width: 490px) {
+     
+        
+
+        main {
+            display: flex;
+            flex-direction: column;
+
+            .parrafo-index {
+                display: none;
+            }
+
+            h1 {
+                padding: 20px;
+                text-align: center;
+                background-color: #ffffff;
+            }
+        }
+
+        // diseño del main
+
+        .pics {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 50px;
+            z-index: -1;
+        }
+
+        .main-background {
+            position: fixed;
+            margin-top: 3vh;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .main-foto1 {
+            width: 100%;
+            margin-top: 25rem;
+            border-radius: 10px;
+        }
+
+        .main-h1 {
+            margin: 300px 0 0 0;
+            background-color: #ffffff;
+            top: 70px;
+        }
+
+        .main-h1-index {
+            margin: 50px 0;
+        }
+
+        // diseño de cards
+        .productos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .card {
+            width: 90%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+            background-color: #3e7c94;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0 0 0;
+
+            img {
+                width: 98%;
+                height: auto;
+                margin: 10px;
+            }
+
+            .card-info {
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 25px;
+                    color: #ffffff;
+                }
+
+                p.price {
+                    margin: 10px 0 0;
+                    font-size: 40px;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        // fin diseño de cards
+
+        //diseño de inicio se sesion
+
+                .container {
+                    width: 80%;
+                    margin: 200px auto;
+                    background-color: #ffffff;
+                    padding: 20px;
+                    border-radius: 30px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        
+                    form {
+                        display: flex;
+                        flex-direction: column;
+        
+                        label {
+                            margin-bottom: 5px;
+                            color: #333;
+                        }
+        
+                        input {
+                            padding: 8px;
+                            margin-bottom: 15px;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                        }
+        
+                        button {
+                            background-color: #3399ff;
+                            color: #fff;
+                            padding: 10px;
+                            border: none;
+                            border-radius: 5px;
+                        }
+                    }
+        
+                    .links {
+                        margin-top: 10px;
+                        text-align: center;
+                    }
+        
+                    // fin diseño de iniciar sesion */
+                }
+
+        
+        // fin diseño del main
+    }
+
+
+//TABLET
+
+
+// diseño para tablet */
+@media only screen and (min-width: 490px) {
+    
+    .parrafo-index {
+        display: none;
+    }
+
+    // diseño del main
+    main {
+        display: flex;
+        flex-direction: column;
+        z-index: -1;
+
+        h1 {
+            padding: 20px 0;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .pics {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: -1;
+        }
+
+        .main-background {
+            position: relative;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .main-foto1 {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .main-h1 {
+            background-color: #ffffff;
+            margin: 10px 0;
+            font-size: 3rem;
+        }
+    }
+
+    
+    // diseño de cards
+    .productos {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        @include card;
+        
+        
+        img {
+            width: 90%;
+            margin: 10px;
+        }
+
+        .card-info {
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+
+            h2 {
+                font-size: 2vh;
+                color: #ffffff;
+            }
+            
+            p.price {
+                padding: 15px;
+                font-size: 2vw;
+                color: #ffffff;
+            }
+        }
+    }
+    
+    // fin diseño de cards
+    
+    // diseño de iniciar sesion */
+    .container{
+        @include container;
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            
+            label {
+                margin-bottom: 5px;
+                color: #333;
+            }
+            
+                input {
+                    padding: 8px;
+                    margin-bottom: 15px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+                
+                button {
+                    background-color: #3399ff;
+                    color: #fff;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+            
+            .links {
+                margin-top: 50px;
+                text-align: center;
+            }
+            
+            // fin diseño de iniciar sesion
+        }
+        
+
+        // fin diseño del main
+}
+// fin diseño para tablet */
+
+
+//DESKTOP
+
+// diseño del main */
+@media only screen and (min-width: 1024px) {
+
+        .main-index {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 0.7fr 1fr;
+
+        h1 {
+            padding: 20px 0;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .parrafo-index {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            color: #497a8d;
+            font-size: 1.2em;
+            grid-row: 2/3;
+            grid-column: 2/3;
+            padding: 20px;
+        }
+        .pics{
+            grid-row:1/3 ;
+            grid-column: 1/2;
+        }
+        .main-background {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+        .main-h1 {
+            background-color: #ffffff;
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+    }
+
+    .main-hombre {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr auto;
+
+        h1{
+            grid-column: 1/3;
+        }
+        .productos{
+            grid-column: 1/3;
+
+        }
+    }
+
+    .main-ninio {
+        display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 1fr auto;
+    
+        h1{
+            grid-column: 1/3;
+        }
+        .productos{
+            grid-column: 1/3;
+        }
+    }
+    
+    .main-mujer{
+        display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 1fr auto;
+    
+        h1{
+            grid-column: 1/3;
+        }
+        .productos{
+            grid-column: 1/3;
+        }
+
+    }
+    
+    // diseño de cards */
+    .productos {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+        .logo-fin {
+            display: none;
+        }
+    
+        .foto-hombre2,
+        .foto-mujer2,
+        .foto-ninio2 {
+            display: none;
+        }
+    
+    
+    
+    // fin diseño de cards */
+
+
+    .container{
+        max-width: 80%;
+    }
+    // fin diseño del main */
+}
