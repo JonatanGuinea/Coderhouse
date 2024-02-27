@@ -363,7 +363,7 @@ body {
   }
   .main-ninio h1 {
     position: absolute;
-    margin: 7em 0 0 15em;
+    margin: 25% 0 0 50%;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
   }
@@ -379,7 +379,7 @@ body {
     position: absolute;
     background: none;
     color: #000000;
-    margin: 2rem 0 0 45rem;
+    margin: 5% 0 0 55%;
   }
   .main-mujer .productos {
     grid-column: 1/3;
