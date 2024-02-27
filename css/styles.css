@@ -107,6 +107,7 @@ body {
     position: fixed;
     margin-top: 3vh;
     width: 100%;
+    z-index: -1;
   }
   .main-foto1 {
     width: 100%;
