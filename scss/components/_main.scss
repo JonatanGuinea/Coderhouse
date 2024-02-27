@@ -175,7 +175,7 @@ main-back
             display: flex;
             flex-direction: column;
             position: relative;
-            z-index: -1;
+            z-index: 1;
         }
 
         .main-background {
