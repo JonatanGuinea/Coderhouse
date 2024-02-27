@@ -107,14 +107,13 @@ body {
     position: fixed;
     margin-top: 3vh;
     width: 100%;
-    z-index: -1;
   }
   .main-foto1 {
     width: 100%;
     margin-top: 25rem;
     border-radius: 10px;
   }
-  .main-h1 {
+  main-back .main-h1 {
     margin: 300px 0 0 0;
     background-color: #ffffff;
     top: 70px;
@@ -219,7 +218,6 @@ body {
   main .main-background {
     position: relative;
     width: 100%;
-    z-index: -1;
   }
   main .main-foto1 {
     width: 100%;
@@ -244,7 +242,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 20px 0 0 0;
-    max-height: 300px;
+    max-height: 350px;
   }
   .card img {
     width: 90%;
@@ -389,9 +387,6 @@ body {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-  }
-  .logo-fin {
-    display: none;
   }
   .foto-hombre2,
   .foto-mujer2,
